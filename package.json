@@ -13,6 +13,8 @@
     "@angular/platform-browser": "~18.2.0",
     "@angular/platform-browser-dynamic": "~18.2.0",
     "@angular/router": "~18.2.0",
+    "@nrwl/angular": "^19.8.4",
+    "@nrwl/nx-cloud": "^19.1.0",
     "rxjs": "~7.8.0",
     "zone.js": "~0.14.3"
   },
@@ -24,6 +26,7 @@
     "@angular/compiler-cli": "~18.2.0",
     "@angular/language-service": "~18.2.0",
     "@eslint/js": "^9.8.0",
+    "@nrwl/nest": "^19.8.4",
     "@nx/angular": "20.1.2",
     "@nx/cypress": "20.1.2",
     "@nx/eslint": "20.1.2",
