@@ -1,1 +1,49 @@
-<p>signup works!</p>
+<div class="auth-container">
+    <h2>Signup</h2>
+    <form (ngSubmit)="onSignup()" class="auth-form">
+        <div class="form-group">
+            <label for="username">Username</label>
+            <div class="input-container">
+                <i class="icon fa fa-user"></i>
+                <input type="text" id="username" [(ngModel)]="username" name="username"
+                    placeholder="Enter your username" required />
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <div class="input-container">
+                <i class="icon fa fa-envelope"></i>
+                <input type="email" id="email" [(ngModel)]="email" name="email" placeholder="Enter your email"
+                    required />
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="phone">Phone</label>
+            <div class="input-container">
+                <i class="icon fa fa-phone"></i>
+                <input type="tel" id="phone" [(ngModel)]="phone" name="phone" placeholder="Enter your phone number"
+                    required />
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <div class="input-container">
+                <i class="icon fa fa-lock"></i>
+                <input type="password" id="password" [(ngModel)]="password" name="password"
+                    placeholder="Enter your password" required />
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="repeatPassword">Repeat Password</label>
+            <div class="input-container">
+                <i class="icon fa fa-lock"></i>
+                <input type="password" id="repeatPassword" [(ngModel)]="repeatPassword" name="repeatPassword"
+                    placeholder="Repeat your password" required />
+            </div>
+        </div>
+        <button type="submit" class="btn">Signup</button>
+    </form>
+    <p class="switch-page">
+        Already have an account? <a routerLink="/login">Login here</a>
+    </p>
+</div>

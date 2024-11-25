@@ -1,1 +1,25 @@
-<p>login works!</p>
+<div class="auth-container">
+    <h2>Login</h2>
+    <form (ngSubmit)="onLogin()" class="auth-form">
+        <div class="form-group">
+            <label for="email">Email</label>
+            <div class="input-container">
+                <i class="icon fa fa-envelope"></i>
+                <input type="text" id="email" [(ngModel)]="email" name="email" placeholder="Enter your email"
+                    required />
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <div class="input-container">
+                <i class="icon fa fa-lock"></i>
+                <input type="password" id="password" [(ngModel)]="password" name="password"
+                    placeholder="Enter your password" required />
+            </div>
+        </div>
+        <button type="submit" class="btn">Login</button>
+    </form>
+    <p class="switch-page">
+        New user? <a routerLink="/signup">Sign up here</a>
+    </p>
+</div>
